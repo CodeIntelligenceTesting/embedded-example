@@ -1,6 +1,9 @@
+add_compile_options(-O0 -g)
+add_link_options(-O0 -g)
+
 add_library(automotive
     crypto/crypto_1.c
-    #crypto/crypto_2.c
+    crypto/crypto_2.c
     gps/gps_1.c
     key_management/key_management_1.c
     time/time_1.c
