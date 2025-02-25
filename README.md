@@ -5,14 +5,14 @@ This project is a simple demo on fuzzing a cryptographic library that could be u
 ## How to Onboard
 
 #### Initialize the repo
-The very first step you need to do is run the following command to initialize cifuzz:
+The very first step you need to do is run the following command in the project root directory to initialize cifuzz:
 ```
 cifuzz init
 ```
 
-This command sets up the necessary directory for cifuzz and creates a `cifuzz.yaml` file, which contains the configuration for cifuzz.
+This command sets up the necessary directory for cifuzz and creates a `cifuzz.yaml` file, which contains the project wide configuration for cifuzz.
 
-Next, you need to enable fuzz testing by adding the following lines to your CMake configuration:
+Next, you need to enable fuzz testing by adding the following lines to your top level CMake configuration:
 ```
 find_package(cifuzz NO_SYSTEM_ENVIRONMENT_PATH)
 enable_fuzz_testing()
