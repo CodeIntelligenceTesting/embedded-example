@@ -7,6 +7,7 @@ add_library(automotive
     gps/gps_1.c
     key_management/key_management_1.c
     time/time_1.c
+    mocks.c
 )
 
 target_include_directories(automotive PUBLIC
