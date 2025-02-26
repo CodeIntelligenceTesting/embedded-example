@@ -4,7 +4,7 @@ This project is a simple demo on fuzzing a cryptographic library that could be u
 
 ## How to Onboard
 
-#### Initialize the repo
+### Initialize the repo
 The very first step you need to do is run the following command in the project root directory to initialize cifuzz:
 ```
 cifuzz init
@@ -18,7 +18,7 @@ find_package(cifuzz NO_SYSTEM_ENVIRONMENT_PATH)
 enable_fuzz_testing()
 ```
 
-#### Create a fuzz test
+### Create a fuzz test
 
 The next step is to create a fuzz test. You can do this by running the following command:
 ```
@@ -33,7 +33,7 @@ add_fuzz_test(fuzztest fuzztest.cpp)
 ```
 
 
-#### Linking the fuzz test with the software under test
+### Linking the fuzz test with the software under test
 
 Now that we have an (empty) fuzz test, we want to start fuzzing. Before deciding which function to fuzz, we need to link our target, `fuzztest`, against the library we want to test, `automotive` (as specified in `src/CMakeLists.txt`). To do this, add the following line under the `fuzztest` target in your CMake configuration:
 ```
